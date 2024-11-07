@@ -39,7 +39,10 @@ const Header = () => {
               Skills
             </a>
 
-            <a className="nav-item nav-link ts-scroll" href="#portfolio">
+            <a
+              className="nav-item nav-link ts-scroll"
+              href="../../../project/project-1/index.html"
+            >
               Portfolio
             </a>
 
