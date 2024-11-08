@@ -41,7 +41,7 @@ const Header = () => {
 
             <a
               className="nav-item nav-link ts-scroll"
-              href="../../../project/project-1/index.html"
+              href="/project/project-1/index.html"
             >
               Portfolio
             </a>

@@ -7,10 +7,28 @@ import {
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLongArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const MyHero = () => {
+  const [showHtmlProject, setShowHtmlProject] = useState(false);
+
+  const handleHtmlProjectClick = () => {
+    setShowHtmlProject(true);
+  };
   return (
     <div id="ts-hero" className="ts-animate-hero-items">
+      <div>
+        <button onClick={handleHtmlProjectClick}>View HTML/CSS Project</button>
+        {showHtmlProject && (
+          <iframe
+            src="/project/project-1/index.html"
+            width="100%"
+            height="500px"
+            title="HTML/CSS Project"
+          ></iframe>
+        )}
+      </div>
+
       {/* HERO CONTENT */}
       <div className="container position-relative h-100 ts-align__vertical">
         <div className="row w-100">
